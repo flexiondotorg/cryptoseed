@@ -7,7 +7,8 @@
     "start": "webpack --config webpack-config.js --progress --inline --colors && electron .",
     "watch": "webpack --config webpack-config.js --progress --inline --colors --watch",
     "lint": "eslint --ext .js,.jsx .",
-    "pack:linux": "build --linux deb --x64",
+    "pack:deb": "build --linux deb --x64",
+    "pack:snap": "build --linux snap --x64",
     "pack:windows": "build --win --x64"
   },
   "repository": "git@github.com:anderson-arlen/cryptoseed.git",
@@ -35,6 +36,7 @@
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "bluebird": "^3.4.7",
+    "eslint": "^4.14.0",
     "eslint-plugin-react": "^6.9.0",
     "flexboxgrid": "^6.3.1",
     "material-ui": "^0.16.6",
